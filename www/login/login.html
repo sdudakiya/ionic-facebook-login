@@ -1,0 +1,63 @@
+<ion-view view-title="Login">
+  <ion-nav-buttons side="left">
+    <button class="button button-clear button-light no-animation"
+            ng-click="previous()" ng-show="slideIndex > 0">
+      Previous
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-light no-animation"
+            ng-click="next()" ng-show="slideIndex != 2">
+      Next
+    </button>
+  </ion-nav-buttons>
+
+  <ion-slide-box class="intro-slidebox" on-slide-changed="slideChanged(index)">
+    <ion-slide>
+      <div id="logo">
+        <img src="/login/images/hello.gif">
+      </div>
+      <p>
+        I am ready to join you!
+      </p>
+      <p>
+        I've worked hard to make you happy.
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <div id="row">
+        <h5>Why you should consider me:</h5>
+        <p>
+          Team player
+        </p>
+        <p>
+          5 years of working with Ionic in enterprise
+        </p>
+        <p>
+          Always enthusiastic about what I do! ( specially Ionic and Drupal )
+        </p>
+        <p>
+          6 years experience building Media, E-Commerce, NGO websites and mobile apps
+        </p>
+        <p>
+          6 times DrupalCon speaker
+        </p>
+        <p>
+          Published author
+        </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <h3>Reach me!</h3>
+      <p>
+        sumitk@sumitk.net || Skype: Sumit.Kataria1 || +1-415.830.6313
+      </p>
+    </ion-slide>
+  </ion-slide-box>
+  <label class="item">
+    <button class="button button-block button-royal" ng-click="fbLogin()">
+      Login with Facebook
+    </button>
+  </label>
+
+</ion-view>
